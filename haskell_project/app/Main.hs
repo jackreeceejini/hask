@@ -247,6 +247,7 @@ equal [arg1, arg2] = do
     return $ Bool $ (primitiveEquals || let (Bool x) = eqvEquals in x)
 equal badArgList = throwError $ NumArgs 2 badArgList
 
+
 main :: IO ()
 main = do 
     args <- getArgs 
